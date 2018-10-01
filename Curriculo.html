@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curriculo - Guilherme Fogo</title>
+	<meta charset="utf-8">
+	<meta name="description" content="PHP top">
+	<meta http-equiv="refresh" content="120">
+	<meta name="auhor" content="Guilherme Fogo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/importante.js"></script>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row d_menu">
+			<div class="col-12 center">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<div class="navbar navbar-brand">
+							<h1 class="h1">
+								<a href="index.html">
+									<img src="" alt="logo-marca" class="">
+								</a>
+							</h1>
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="col-4">
+							<a href="index.html" class="btn btn-md btn-primary">Home</a>
+						</div>
+					</li>
+					<li class="list-inline-item dropdown">
+						<div class="col-4">
+							<a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Redes Social</a>
+						<ul class="dropdown-menu">
+							<li class="center">
+								<a href="https://www.facebook.com/guilherme.fogo.1"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="center">
+								<a href="https://www.youtube.com/?gl=BR&hl=pt"><i class="fab fa-youtube"></i></a>
+							</li>
+							<li class="center">
+								<a href="https://github.com/GuilhermeFogo/" target="_blank"><i class="fab fa-github"></i></a>
+							</li>
+						</ul>
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="col-4">
+							<a href="Curriculo.html" class="btn btn-md btn-primary">Ver o CV</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<article class="container-fluid">
+		<section class="col-md-12"">
+			<div class="center">
+				<b class="h2">Objetivos:</b>
+				<p>Ter meu primeiro emprego e aprimorar o conhecimento na área de tecnologia da informação(TI).</p>
+			</div>
+	</section>
+
+	<section class="col-md-12">
+		<div class="center">
+			<b class="h2">Constituição de Ensino:</b>
+			<ul id="app" class="list-unstyled">
+				<li v-for="todo in todos">
+				   {{ todo.text }}
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="center">
+			<b class="h2">Diplomas e Certificados:</b>
+			<div class="col-md-12">
+				<ul class="list-unstyled" id="lista_certificados">
+					<li v-for="todo in todos">
+						{{todo.text}}
+					</li>
+				</ul>
+			</div>
+	</section>
+
+
+
+
+	</article>
+
+
+	<script type="text/javascript" src="js/meu_vue.js"></script>
+</body>
+</html>
