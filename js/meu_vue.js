@@ -72,11 +72,11 @@ var lista_certificados = new Vue({
 
 
 
-var links_certificados = new Vue({
-	el: '#links_certificados',
-	data: {
-		todos:[
-			{text: 'img/imagem.png'}
-		]
-	}
-});
+// var links_certificados = new Vue({
+// 	el: '#links_certificados',
+// 	data: {
+// 		todos:[
+// 			{text: 'img/imagem.png'}
+// 		]
+// 	}
+// });
