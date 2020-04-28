@@ -5,7 +5,7 @@ var app = new Vue ({
       {text: 'Ensino médio (Concluído)'},
       {text: 'Senac Santo André - Técnico em Informática (Concluido)'},
       {text: 'Victory English Training (Cursando)'},
-      {text: 'Ensino Superior- Faculdade Metodista (Cursando 6ºsemestre Sistemas de informação)'}
+      {text: 'Ensino Superior- Faculdade Metodista (Cursando 7ºsemestre Sistemas de informação)'}
     ]
   }
 });
