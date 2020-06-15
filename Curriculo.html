@@ -82,7 +82,7 @@
 	</div>
 
 	<article class="container-fluid">
-		<a href="https://drive.google.com/file/d/1wSO7AUjU59ky42SBXjItt9sHyCxt31LV/view?usp=sharing" target="_blank" download>
+		<a href="docs/Curriculo Guilherme Fogo.docx" target="_blank" download>
 			<button class="btn btn-primary">Baixar Curriculo</button>
 		</a>
 	</article>
@@ -90,20 +90,34 @@
 		<section class="col-md-12">
 			<div class="center">
 				<b class="h2">Meus Objetivos:</b>
-				<p>Estagiar na área de desenvolvimento de software, atuando ativamente nas resoluções de problemas, buscando constante aprendizado. 
-					Podendo auxiliar na instalação e manutenção de equipamentos.</p>
+				<p class="p">Estagiar na área de desenvolvimento de software, atuando ativamente nas resoluções de
+					problemas, buscando constante aprendizado.
+					<br> Podendo auxiliar na instalação e manutenção de equipamentos.</p>
 			</div>
 		</section>
 
 		<section class="col-md-12">
 			<div class="center">
-				<b class="h2">Constituição de Ensino:</b>
+				<b class="h2">Instituição de Ensino</b>
 				<ul id="app" class="list-unstyled">
-					<li v-for="todo in todos">
-						{{ todo.text }}
+					<li v-for="todo in todos" class="p">
+						{{todo.text }}<br>
+						{{todo.campus}}<br>
+						{{todo.status}}
 					</li>
 				</ul>
 			</div>
+		</section>
+		<section class="col-md-12">
+			<div class="text-center">
+				<b class="h2">Idiomas</b>
+				<div id="idiomas">
+					<p v-for="idioma in myidiomas" class="p">
+						{{idioma.nome }} - {{idioma.nivel}}
+					</p>
+				</div>
+			</div>
+
 		</section>
 	</article>
 	<article class="container">
@@ -123,14 +137,14 @@
 					</tr>
 				</thead>
 				<tbody id="lista_certificados">
-						<tr v-for="(nomes, index) in nome" class="pb-2">
-							<td>
-								<a :href="nomes.link" target="_blank">{{index}} - Link do Certificado</a>
-							</td>
-							<td>
-								{{index}} - {{nomes.text}}
-							</td>
-						</tr>
+					<tr v-for="(nomes, index) in nome" class="pb-2">
+						<td>
+							<a :href="nomes.link" target="_blank">{{index}} - Link do Certificado</a>
+						</td>
+						<td>
+							{{index}} - {{nomes.text}}
+						</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
