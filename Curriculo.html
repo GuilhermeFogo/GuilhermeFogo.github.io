@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
 	<title>Curriculo - Guilherme Fogo</title>
@@ -80,11 +80,18 @@
 			</div>
 		</div>
 	</div>
+
+	<article class="container-fluid">
+		<a href="https://drive.google.com/file/d/1wSO7AUjU59ky42SBXjItt9sHyCxt31LV/view?usp=sharing" target="_blank" download>
+			<button class="btn btn-primary">Baixar Curriculo</button>
+		</a>
+	</article>
 	<article class="container-fluid">
 		<section class="col-md-12">
 			<div class="center">
-				<b class="h2">Objetivos:</b>
-				<p>Ter meu primeiro emprego e aprimorar o conhecimento na área de tecnologia da informação(TI).</p>
+				<b class="h2">Meus Objetivos:</b>
+				<p>Estagiar na área de desenvolvimento de software, atuando ativamente nas resoluções de problemas, buscando constante aprendizado. 
+					Podendo auxiliar na instalação e manutenção de equipamentos.</p>
 			</div>
 		</section>
 
@@ -115,21 +122,15 @@
 						</th>
 					</tr>
 				</thead>
-				<tbody>
-					<td>
-						<ul class="list-unstyled" id="lista_img">
-							<li v-for="(caminhos, index) in caminho" class="pb-2">
-								<a :href="caminhos.text" target="_blank">{{index}} - Link do Certificado</a>
-							</li>
-						</ul>
-					</td>
-					<td>
-						<ul class="list-unstyled" id="lista_certificados">
-							<li v-for="(nomes, index) in nome" class="pb-2">
+				<tbody id="lista_certificados">
+						<tr v-for="(nomes, index) in nome" class="pb-2">
+							<td>
+								<a :href="nomes.link" target="_blank">{{index}} - Link do Certificado</a>
+							</td>
+							<td>
 								{{index}} - {{nomes.text}}
-							</li>
-						</ul>
-					</td>
+							</td>
+						</tr>
 				</tbody>
 			</table>
 		</div>
