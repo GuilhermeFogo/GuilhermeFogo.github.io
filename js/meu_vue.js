@@ -4,7 +4,7 @@ var app = new Vue({
     todos: [
       {
         text: 'Ensino Superior - Universidade Metodista de São Paulo',
-        status:'Cursando 7º semestre',
+        status:'Cursando 8º semestre',
         campus:'Campus Rudge Ramos - SBC'
       }
     ]
