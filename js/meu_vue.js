@@ -3,11 +3,20 @@ var app = new Vue({
   data: {
     todos: [
       {
-        text: 'Ensino Superior - Universidade Metodista de São Paulo',
+        text: 'Universidade Metodista de São Paulo',
         status:'Concluido',
-        campus:'Campus Rudge Ramos - SBC'
+        campus:'Campus Rudge Ramos - SBC',
+        tipo:'Bacharelado em Sistemas de Informação',
+        anofim: '2020'
+      },
+      {
+        text: 'Senac',
+        status:'Concluido',
+        campus:'Senac Santo André', 
+        tipo: 'Técnico em Informatica',
+        anofim: '2016'
       }
-    ]
+    ],
   }
 });
 
@@ -46,8 +55,39 @@ var listIdioma = new Vue({
   el: '#idiomas',
   data: {
     myidiomas: [
-      { nome: 'Portugues', nivel: 'Fluente' },
-      { nome: 'Ingles', nivel: 'Intermediario' },
+      { nome: 'Português', nivel: 'Fluente' },
+      { nome: 'Inglês', nivel: 'Intermediario' },
+    ]
+  }
+});
+
+var texto_Abertura = new Vue({
+  el: '#abertura',
+  data:{
+    texto: "Meu nome é Guilherme sou uma pessoa muito dedicada e curiosa, procurando sempre dar o melhor de mim e aprender o máximo possível todos os dias"
+  }
+});
+
+var empregos = new Vue({
+  el:'#emprego',
+  data:{
+    empregos:[
+      {
+        nome_empresa:'Mazars',
+        link:'https://por.mazars.com.br/',
+        periodo:'Atualmete',
+        img:'img/Mazars.png',
+        atividade:'Atuando ativamente em analises de dados contabeis e em projetos de LGPD',
+        cargo:'Assistente de Sistemas I',
+      },
+      {
+        nome_empresa:'Viajanet',
+        link:'https://www.viajanet.com.br/',
+        periodo:'1 ano e 4 meses',
+        img:'img/Viajanet.jpg',
+        atividade:'Atuando diretamente na  criação e manutenção de sistemas internos da empresa, utilizando a tecnologia C# com a metodologia Scrum',
+        cargo:'Estagiario de Desenvolvimento de Sistemas',
+      }
     ]
   }
 });

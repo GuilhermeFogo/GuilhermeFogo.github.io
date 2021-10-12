@@ -9,204 +9,168 @@
 	<meta name="auhor" content="Guilherme Fogo">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
 		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+
+	<link href="css/estilo.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
 </head>
 
 <body>
 	<div class="container-fluid">
-		<div class="row d_menu">
-			<div class="col-12 center">
-				<ul class="list-inline">
-					<li class="list-inline-item">
-						<div class="navbar navbar-brand">
-							<h1 class="h1">
-								<a href="index.html">
-									<img src="#" alt="logo-marca" class="img-fluid">
-								</a>
-							</h1>
+		<div class="row branco">
+			<div class="col preto">
+				<nav class="navbar">
+					<div class="container justify-content-center">
+						<div class="btn btn-outline-secondary me-2">
+							<a class="nodecaracao branco" href="https://www.facebook.com/guilherme.fogo.1"
+								target="_blank">
+								<i class="fab fa-facebook-f me-2 branco"></i> Facebook</a>
 						</div>
-					</li>
-					<li class="list-inline-item">
-						<div class="col-4">
-							<a href="index.html" class="btn btn-md btn-primary">Home</a>
+						<div class="btn btn-outline-secondary me-2">
+							<a class="nodecaracao branco" href="https://www.youtube.com/?gl=BR&hl=pt" target="_blank"><i
+									class="fab fa-youtube me-2 branco"></i>
+								Youtube </a>
 						</div>
-					</li>
-					<li class="list-inline-item dropdown">
-						<div class="col-4">
-							<a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">Redes Social</a>
-							<ul class="dropdown-menu">
-								<li class="center">
-									<a href="https://www.facebook.com/guilherme.fogo.1" target="_blank"><i
-											class="fab fa-facebook-f"></i></a>
-								</li>
-								<li class="center">
-									<a href="https://www.youtube.com/?gl=BR&hl=pt" target="_blank"><i
-											class="fab fa-youtube"></i></a>
-								</li>
-								<li class="center">
-									<a href="https://github.com/GuilhermeFogo/" target="_blank"><i
-											class="fab fa-github"></i></a>
-								</li>
-								<li class="center">
-									<a href="https://www.linkedin.com/in/guilherme-fogo-8652b4114/" target="_blank"><i
-											class="fab fa-linkedin"></i></a>
-								</li>
-							</ul>
+						<div class="btn btn-outline-secondary me-2">
+							<a class="nodecaracao branco" href="https://github.com/GuilhermeFogo/" target="_blank"><i
+									class="fab fa-github me-2 branco"></i> Git
+								Hub</a>
 						</div>
-					</li>
-					<li class="list-inline-item">
-						<div class="col-4">
-							<a href="Curriculo.html" class="btn btn-md btn-primary">Ver o CV</a>
+						<div class="btn btn-outline-secondary me-2">
+							<a class="nodecaracao branco" href="https://www.linkedin.com/in/guilherme-fogo-8652b4114/"
+								target="_blank"><i class="fab fa-linkedin me-2 branco"></i>Linkedin</a>
 						</div>
-					</li>
-				</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="col preto">
+				<nav class="navbar">
+					<a href="./docs/Currículo Guilherme Fogo.docx" target="_blank" download>
+						<button class="btn btn-outline-secondary branco">Baixar Curriculo</button>
+					</a>
+				</nav>
 			</div>
 		</div>
 	</div>
-	<header id="controle" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="carousel-item active center">
-				<h2>Primeiro Emprego</h2>
-				<a href="https://www.viajanet.com.br/" target="_blank">
-					<figure class="img-thumbnail">
-						<img src="img/Viajanet.jpg" class="img-fluid">
-					</figure>
-				</a>
-			</div>
-			<div class="carousel-item center">
-				<h2>Segundo Emprego</h2>
-				<a href="https://por.mazars.com.br/" target="_blank">
-					<figure class="img-thumbnail">
-						<img src="img/Mazars.png" class="img-fluid">
-					</figure>
-				</a>
-			</div>
-			<div class="carousel-item center">
-				<h2>Terceiro Emprego</h2>
-				<a href="">
-					<figure class="img-thumbnail">
-						<img src="" class="img-fluid">
-					</figure>
-				</a>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#controle" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#controle" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</header>
-	<br> <br><br>
-	<article class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<section class="col-sm-3">
-				<div class="card">
-					<div class="card-header">
-						Meu Objetivo:
-					</div>
-					<div class="card-body">
-						Sempre estar em constante aprendizado com a área de TI, atuando ativamente para o meu crescimento profissional e
-						dos meus parceiros(as), com foco sempre no Desenvolvimento Seguro de aplicações WEB e CyberSecurity
-					<div class="card-footer">
-						<a href="Curriculo.html">Saiba Mais>></a>
-					</div>
-				</div>
-			</section>
-			<section class="col-sm-3">
-				<div class="card">
-					<div class="card-header">
-						Habilidades
-					</div>
-					<div class="card-body">
-						<p>Possuo o conhecimento em:</p>
-						<ul class="list-unstyled">
-							<li>Métodologia Agil (SCRUM)</li>
-							<li>Desenvolvimento de API Rest (BackEnd)</li>
-							<li>Desenvolvimento WEB (Angular2)</li>
-							<li>Análise de dados contábeis (Excel)</li>
-							<li>Lei Geral de Proteção de Dados (LGPD)</li>
-						</ul>
-					</div>
-					<div class="card-footer">
-						<a href="Curriculo.html">Saiba Mais>></a>
-					</div>
-				</div>
-			</section>
-			<section class="col-sm-3">
-				<div class="card">
-					<div class="card-header">
-						Experiência
-					</div>
-					<div class="card-body">
-						<ul class="list-unstyled">
-							<li>Viajanet => Desenvolvimento de sistemas para internet , foco na criação e manutenção de sistemas WEB com C# .Net </li>
-							<li>Mazars => Auditoria e Consultoria, foco com analise de dados e projetos LGPD </li>
-						</ul>
-						
-					</div>
-					<div class="card-footer">
-						<a href="Curriculo.html">Saiba Mais>></a>
-					</div>
-				</div>
-			</section>
-			<section class="col-sm-3">
-				<div class="card">
-					<div class="card-header">
-						Qualidade
-					</div>
-					<div class="card-body">
-						<ul class="list-unstyled">
-							<li>Persistência</li>
-							<li>Espirito de Equipe</li>
-						</ul>
-					</div>
-					<div class="card-footer">
-						<a href="Curriculo.html">Saiba Mais>></a>
-					</div>
-				</div>
-			</section>
+			<figure>
+				<img src="img/Imagem.jpg" alt="foto" class="img-fluid rounded-circle mx-auto d-block" />
+			</figure>
+			<hr class="borda" />
 		</div>
-	</article>
-	<article class="container row">
-		<section class="col-6">
-			<p class="h1 center">Endereço</p>
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.159416686598!2d-46.52651698501116!3d-23.67025637150783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce427aee80cf83%3A0xd491f54089bea322!2sAv.+da+Saudade+-+Vila+Assun%C3%A7%C3%A3o%2C+Santo+Andr%C3%A9+-+SP!5e0!3m2!1spt-PT!2sbr!4v1528812836882"
-				width="500" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</section>
-		<section class="col-sm-6">
-			<h5 class="informacoes"></h5>
-			<a href="mailto:gui.fogo17@gmail.com">>>Clique aqui<<</a> <p class="telefone">0</p>
-		</section>
-	</article>
-	<br>
-	<footer class="container-fluid">
-		<div class="row d-footer">
-			<div class="col-12 center">
-				<p class="h3 mudar">Criado por Guilherme Braz Fogo</p>
+	</div>
+	<div class="container-fluid">
+		<h1 class="text-center">Informações do meu CV</h1>
+
+		<div id="carrosseusID" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carrosseusID" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carrosseusID" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carrosseusID" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
+			<div class="carousel-inner tamanho-carrosel ">
+				<div class="carousel-item active" data-bs-interval="100000">
+					<div class="abertura">
+						<p class="h2">Quem Sou Eu</p>
+						<p id="abertura" class="h3 paragrafo">{{texto}}</p>
+						<br>
+						<p class="h2">Tragetoria profissional</p>
+						<a href="#tragetoria" class="h3 paragrafo"> Clique aqui para ir para iniciar</a>
+
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="10000">
+					<div class="abertura">
+						<p class="h2">Minha Formação</p>
+						<div class="paragrafo">
+							<p class="h3">Instituições de Ensino</p>
+							<ul id="app" class="list-group">
+								<li v-for="todo in todos" class="list-group-item p">
+									Instituição: {{todo.text }}<br>
+									Local: {{todo.campus}}<br>
+									Graduação: {{todo.tipo}} <br>
+									Status: {{todo.status}} - {{todo.anofim}} <br>
+								</li>
+							</ul>
+
+							<p class="h3">Lingua</p>
+							<div id="idiomas">
+								<p v-for="a in myidiomas" class="p">
+									Idioma: {{a.nome }} - {{a.nivel}}
+								</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="10000">
+					<div class="abertura">
+						<p class="h1">Cursos Extra Curriculares</p>
+						<div id="lista_certificados" class="grid-container">
+							<div v-for="(nomes, index) in nome">
+								<a :href="nomes.link" target="_blank" class="link-normal">
+									<figure>
+										<img :src="nomes.link" alt="Certificados" />
+										<p>{{nomes.text}}</p>
+									</figure>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carrosseusID" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carrosseusID" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
-	</footer>
-	<script type="text/javascript" src="js/importante.js"></script>
+
+		<div class="container-fluid">
+			<article id="emprego">
+				<div class="row">
+					<h2 id="tragetoria">Tragetoria profissional</h2>
+					<div v-for="job in empregos" class="col-sm-6">
+						<div class="card">
+							<div class="card-header">
+								<p class="h3">Empresas já Trabalhadas</p>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">{{job.nome_empresa}}</h5>
+								<a :href="job.link" target="_blank">
+									<img :src="job.img" alt="empresas trabalhadas"
+										class="img-fluid mx-auto d-block img-padrao" />
+								</a>
+								<p class="card-text">
+									Atividade: {{job.atividade}}<br>
+									Cargo: {{job.cargo}}
+								</p>
+							</div>
+							<div class="card-footer">
+								<a href="https://www.linkedin.com/in/guilherme-fogo-8652b4114/" target="_blank">
+									>>>Clique aqui para mais informações<<< </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+
+	</div>
+	<script src="js/meu_vue.js"></script>
 </body>
 
 </html>
