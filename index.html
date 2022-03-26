@@ -83,9 +83,33 @@
 						<p class="h2">Quem Sou Eu</p>
 						<p id="abertura" class="h3 paragrafo">{{texto}}</p>
 						<br>
-						<p class="h2">Tragetoria profissional</p>
-						<a href="#tragetoria" class="h3 paragrafo"> Clique aqui para ir para iniciar</a>
-
+						<article id="emprego">
+							<div class="row">
+								<h2 id="tragetoria">Tragetoria profissional</h2>
+								<div v-for="job in empregos" class="col-sm-6">
+									<div class="card">
+										<div class="card-header">
+											<p class="h3">Empresas já Trabalhadas</p>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">{{job.nome_empresa}}</h5>
+											<a :href="job.link" target="_blank">
+												<img :src="job.img" alt="empresas trabalhadas"
+													class="img-fluid mx-auto d-block img-padrao" />
+											</a>
+											<p class="card-text">
+												Atividade: {{job.atividade}}<br>
+												Cargo: {{job.cargo}}
+											</p>
+										</div>
+										<div class="card-footer">
+											<a href="https://www.linkedin.com/in/guilherme-fogo-8652b4114/" target="_blank">
+												>>>Clique aqui para mais informações<<< </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="10000">
@@ -138,37 +162,6 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-
-		<div class="container-fluid">
-			<article id="emprego">
-				<div class="row">
-					<h2 id="tragetoria">Tragetoria profissional</h2>
-					<div v-for="job in empregos" class="col-sm-6">
-						<div class="card">
-							<div class="card-header">
-								<p class="h3">Empresas já Trabalhadas</p>
-							</div>
-							<div class="card-body">
-								<h5 class="card-title">{{job.nome_empresa}}</h5>
-								<a :href="job.link" target="_blank">
-									<img :src="job.img" alt="empresas trabalhadas"
-										class="img-fluid mx-auto d-block img-padrao" />
-								</a>
-								<p class="card-text">
-									Atividade: {{job.atividade}}<br>
-									Cargo: {{job.cargo}}
-								</p>
-							</div>
-							<div class="card-footer">
-								<a href="https://www.linkedin.com/in/guilherme-fogo-8652b4114/" target="_blank">
-									>>>Clique aqui para mais informações<<< </a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-
 	</div>
 	<script src="js/meu_vue.js"></script>
 </body>

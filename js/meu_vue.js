@@ -64,7 +64,7 @@ var listIdioma = new Vue({
 var texto_Abertura = new Vue({
   el: '#abertura',
   data:{
-    texto: "Meu nome é Guilherme sou uma pessoa muito dedicada e curiosa, procurando sempre dar o melhor de mim e aprender o máximo possível todos os dias"
+    texto: "Sempre estar em constante aprendizado com a área de TI, atuando ativamente no crescimento profissional focando no Desenvolvimento seguro de programas"
   }
 });
 
@@ -77,7 +77,7 @@ var empregos = new Vue({
         link:'https://por.mazars.com.br/',
         periodo:'Atualmete',
         img:'img/Mazars.png',
-        atividade:'Atuando ativamente em analises de dados contabeis e em projetos de LGPD',
+        atividade:'Realizando atividades de analises contabeis usando o excel e ferramtas de ETL, ajudando na adequação de perojetos de LGPD e por fim atuando como testador',
         cargo:'Assistente de Sistemas I',
       },
       {
@@ -85,7 +85,7 @@ var empregos = new Vue({
         link:'https://www.viajanet.com.br/',
         periodo:'1 ano e 4 meses',
         img:'img/Viajanet.jpg',
-        atividade:'Atuando diretamente na  criação e manutenção de sistemas internos da empresa, utilizando a tecnologia C# com a metodologia Scrum',
+        atividade:'Atuando diretamente na  criação e manutenção de sistemas internos da empresa, utilizando a tecnologia C#, Angular com a metodologia Scrum',
         cargo:'Estagiario de Desenvolvimento de Sistemas',
       }
     ]
